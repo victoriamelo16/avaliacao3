@@ -5,17 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Life events</title>
+    <title>Life Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="modelo.css">
 </head>
 <body>
    <header class="container"> 
             <div class="search-box">
                 <a href="" class="search-btn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
-                <input type="text" class="search-text" placeholder="Pesquisar...">
-                
+                    <div id="input_icon">
+                        
+                        <input type="text" class="search-text" placeholder="Pesquisar eventos, shows, teatros, espetáculos...">
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button> 
+                        
+                    </div>
             </div>
                 <div class="location-style">
                     <a href="#"><i class="fa-solid fa-location-dot"></i>Qualquer lugar</a>
@@ -27,6 +33,97 @@
                     </ul>
             </div>
    </header>
+   
+   <main>
+    <div class="navigation">
+        <ul class="temas">
+            <li>Show</li>
+            <li>Teatro</li>
+            <li>Infantil</li>
+            <li>Dança</li>
+            <li>Festa</li>
+            <li>Clássicos</li>
+        </ul>
+    </div>
+   </main>
+   <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Life Events</h1>
+                <p>Redes Sociais</p>
+                <div id="footer_social_media">
+                    <a href="#" class=footer-link id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class=footer-link id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class=footer-link id="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class=footer-link id="linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <ul class="footer-list">
+                <li>
+                    <h3>Institucional</h3><br>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Sobre a Life Events</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Fale Conosco</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Assine Life News</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Pontos de Venda</a>
+                </li>
+            </ul>
 
+            <ul class="footer-list">
+                <li>
+                    <h3>Políticas</h3><br>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Políticas de Vendas</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Políticas de Privacidade</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Políticas de Meia Entrada</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <h3>Clientes</h3><br>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Seja Nosso Parceiro</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Subscribe</h3>
+                <p>
+                    Digite seu e-mail para ser notificado sobre eventos inéditos   
+                </p>
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2023 all rights reserved
+        </div>    
+   </footer>
 </body>
 </html>
