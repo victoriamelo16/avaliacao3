@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Life Events</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="principal.css">
     <link rel="stylesheet" href="modelo.css">
 </head>
 <body>
@@ -33,8 +33,8 @@
                     </ul>
             </div>
    </header>
-   
-   <main>
+   <nav>
+    <div class="topicos"><h2>Encontre o melhor para você!</h2></div>
     <div class="navigation">
         <ul class="temas">
             <li>Show</li>
@@ -42,9 +42,119 @@
             <li>Infantil</li>
             <li>Dança</li>
             <li>Festa</li>
+            <li>Gastronomia</li>
             <li>Clássicos</li>
         </ul>
     </div>
+   </nav>
+   <main>
+    <div class="topicos">
+        <h2>Eventos em destaque na Life Events</h2>
+    </div>
+    <div class="slider">
+        <div class="slides">
+            <!-- Radio Buttons-->   
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">  
+            <input type="radio" name="radio-btn" id="radio3">  
+            <input type="radio" name="radio-btn" id="radio4">    
+            
+            <!-- Slide images -->
+            <div class="slide first">
+                <img src="img/img1.jpg" alt="Imagem 1">
+            </div>
+            <div class="slide">
+                <img src="img/img2.jpeg" alt="Imagem 2">
+            </div>
+            <div class="slide">
+                <img src="img/img5.png" alt="Imagem 3">
+            </div>
+            <div class="slide">
+                <img src="img/img4.png" alt="Imagem 4">
+            </div>
+         
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div>
+            <div class="manual-navigation">
+                 <label for="radio1" class="manual-btn"></label>
+                 <label for="radio2" class="manual-btn"></label>
+                 <label for="radio3" class="manual-btn"></label>
+                 <label for="radio4" class="manual-btn"></label>
+            </div>
+   </div>
+
+    <div class="topicos">
+        <h2>Encontre os eventos trends do mês</h2>
+    </div>
+    <section>
+        <div class="container_trends">
+            <div class="card">
+                <div class="image">
+                </div>
+                <div class="content">
+                    <p class="data">25 JUL > 01 OUT</p><br>
+                    <span class="title">Museu do Ipiranga</span>
+                    <p class="desc">Terça, Quinta, Sexta, Sábado e Domingo às 16h00
+
+                        3 de Agosto a 30 de Setembro
+                        
+                        Museu do Ipiranga - R. dos Patriotas, 20, São Paulo - São Paulo </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image2">
+                </div>
+                <div class="content">
+                    <p class="data">25 JUL > 10 SET</p><br>
+                    <span class="title">Museu do Amanhã</span>
+                    <p class="desc">Terça a domingo . 10h às 18h . última entrada 17h
+
+                        4 de Agosto a 10 de Setembro
+                        
+                        Museu do Amanhã - Praça Mauá, 1, Rio de Janeiro - Rio de Janeiro</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image3">
+                </div>
+                <div class="content">
+                    <p class="data">23 AGO > 24 AGO</p><br>
+                    <span class="title">Festival Afropunk Bahia 2023</span>
+                    <p class="desc">Sábado e Domingo às 16h00
+                        
+                        Parque de Exposições. - Av. Luís Viana Filho, 1590, Salvador - Bahia</p>
+                </div>
+    </section>
+
+    <div class="topicos"><h2>O melhor de cada cidade está aqui!</h2></div>
+    <section class="container3">
+        <div class="card-container">
+            <div class="card-image img1">
+                <h2>Salvador</h2>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card-image img2">
+                <h2>Brasília</h2>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card-image img3">
+                <h2>São Paulo</h2>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card-image img4">
+                <h2>Curitiba</h2>
+            </div>
+        </div>
+    </section>
+
    </main>
    <footer>
         <div id="footer_content">
