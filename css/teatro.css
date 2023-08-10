@@ -7,21 +7,23 @@
     width: 100%;
     background-color: #FFFFFF;
     margin-top: 0;
+    
 }
 .banner-container{
-
+    width: 100%;
+    
 }
 .banner-container h2{
     display: flex;
     position: relative;
     height: 100%;
-    align-items: flex-end;
-    justify-content: center;
+    padding-left: 75px;
+    align-items: center;
     font-family: "Open Sans", sans-serif;
+    font-size: 45px;
     color: white;
 }
 .banner-image{
-    margin: 40px 20px;
     overflow: hidden;
     height: 300px;
     background-size: cover;
@@ -30,7 +32,7 @@
     transition: 0.4s;
 }
 .img1{
-    background-image: url(../img/);
+    background-image: url(../img/bannerpurple.jpg);
 }
 .topicos h2{
     font-family: "Open Sans", sans-serif;
@@ -67,7 +69,7 @@
     box-shadow: 0 5px 10px rgb(103, 103, 103);
     transition: 0.4s;
 }
-.card .image, .image2, .image3, .image4, .image5, .image6, .image7, .image8{
+.card .image, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10, .image11, .image12{
     margin-bottom: 0;
     background-position: center;
     background-size: cover;
@@ -75,27 +77,21 @@
     height: 170px;
 }
 .card .image{
-  
     background-image: url('../img/beetlejuice.jpeg');
 }
 .card .image2{
- 
     background-image: url('../img/donasonia.jpeg');
 }
 .card .image3{
-
     background-image: url('../img/renatoalbani.jpeg');
 }
 .card .image4{
- 
     background-image: url('../img/historiasdoporchat.jpeg');
 }
 .card .image5{
-  
     background-image: url('../img/vallen.jpeg');
 }
 .card .image6{
-
     background-image: url('../img/coldplay.jpeg');
 }
 .card .image7{
@@ -103,6 +99,18 @@
 }
 .card .image8{
     background-image: url('../img/defante.jpeg');
+}
+.card .image9{
+    background-image: url('../img/brunalouise.jpeg');
+}
+.card .image10{
+    background-image: url('../img/djava.jpeg');
+}
+.card .image11{
+    background-image: url('../img/adriana.jpeg');
+}
+.card .image12{
+    background-image: url('../img/deiveleonardo.jpeg');
 }
 
 .card .content{
