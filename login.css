@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgb(221, 160, 221), rgb(220, 180, 255), rgba(255, 255, 255, 0.791));
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+  
+
+h1 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 30px black;
+}
