@@ -6,7 +6,6 @@
 }
 .banner-container{
     width: 100%;
-    
 }
 .banner-container h2{
     display: flex;
@@ -72,40 +71,40 @@
     height: 170px;
 }
 .card .image{
-    background-image: url('../img/beetlejuice.jpeg');
+    background-image: url('../img/segueobaile.jpeg');
 }
 .card .image2{
-    background-image: url('../img/donasonia.jpeg');
+    background-image: url('../img/ana.jpeg');
 }
 .card .image3{
-    background-image: url('../img/renatoalbani.jpeg');
+    background-image: url('../img/djavanturne.jpeg');
 }
 .card .image4{
-    background-image: url('../img/historiasdoporchat.jpeg');
+    background-image: url('../img/alcione.jpeg');
 }
 .card .image5{
-    background-image: url('../img/vallen.jpeg');
+    background-image: url('../img/rock.jpg');
 }
 .card .image6{
-    background-image: url('../img/coldplay.jpeg');
+    background-image: url('../img/macuca.png');
 }
 .card .image7{
-    background-image: url('../img/umadeclaracaodeamor.jpeg');
+    background-image: url('../img/replay.png');
 }
 .card .image8{
-    background-image: url('../img/defante.jpeg');
+    background-image: url('../img/sarara.png');
 }
 .card .image9{
-    background-image: url('../img/brunalouise.jpeg');
+    background-image: url('../img/nandoreis.jpeg');
 }
 .card .image10{
-    background-image: url('../img/djava.jpeg');
+    background-image: url('../img/linker.jpeg');
 }
 .card .image11{
-    background-image: url('../img/adriana.jpeg');
+    background-image: url('../img/luedji.png');
 }
 .card .image12{
-    background-image: url('../img/deiveleonardo.jpeg');
+    background-image: url('../img/melim.png');
 }
 
 .card .content{
