@@ -1,50 +1,76 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: plum;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
+    background-image: linear-gradient(rgb(221, 160, 221), rgb(220, 180, 255), rgba(255, 255, 255, 0.791));
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+  
+  
+  h1 {
     text-align: center;
     margin-top: 0px;
-}
-
-form {
+  }
+  
+  form {
     max-width: 400px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 25px;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 30px rgb(127, 4, 4);
-}
-
-label {
+    box-shadow: 0 2px 30px black;
+  }
+  
+  label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="parceria"],
+  textarea {
     width: 90%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid purple;
-    border-radius: 20px;
-}
-
-input[type="submit"] {
-    background-color:rgb(194, 36, 194);
-    color: #fef9f9;
-    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  
+  a{
+    width: 100%;
+    height: 47px;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 10px 0px;
+    color: BLACK;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  button{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: 0.5s;
+    background-color: #ebc7eb;
     border: none;
-    border-radius: 20px;
+    padding: 15px;
+    width: 50%;
+    height: 47px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 2px 2px 2px #000;
+    transition: 0.5s;
+  }
+  
+  button:hover {
+    background-color: #DDA0DD;
     cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: plum;
-}
+  }
