@@ -242,3 +242,47 @@
     border-radius: 10px;
     background-image: url(../img/curitiba.jpg);
 }
+.container-table{
+    font-family: "Open Sans", sans-serif;
+    color: dimgrey;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    width: 70%;
+    background-color: rgb(245, 242, 242);
+    padding: 2px 0;
+    border-radius: 10px;
+    margin: 30px auto 80px;
+}
+.container-table:hover{
+    box-shadow: 0 5px 10px rgb(196, 193, 193);
+    transition: 0.4s;
+}
+.container-table th{
+    padding: 15px 10px 10px;
+    color: #5d5d5d;
+    font-size: 20px;
+    text-align: left;
+}
+.container-table td{
+    padding: 0 12px 15px;
+    line-height: 1.4;
+}
+.container-table .button-table{
+   border: 1px solid #DDA0DD;
+   font-size: 15px;
+   color: #DDA0DD;
+   cursor: pointer;
+   align-items: center;
+   padding: 15px 10px 15px 10px;
+   text-decoration: none;
+   border-radius: 10px;
+}
+.container-table .button-table:hover{
+    transition: ease-in-out;
+    color: white;
+    text-decoration: none;
+    background-color: #DDA0DD;
+    transition: 0.55s;
+  }
+    

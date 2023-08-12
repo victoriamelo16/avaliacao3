@@ -86,6 +86,10 @@ ul{
   border: 1px solid #b3b3b3;
   border-radius: 10px;
 }
+.search input:focus{
+  border: 1px solid #b3b3b3;
+  border-radius: 10px;
+}
 .content-select .options{
   margin-top: 10px;
   max-height: 250px;
