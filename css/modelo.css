@@ -13,7 +13,7 @@ ul{
   list-style: none;
 }
 .menu{
-  margin: 10px 0;
+  margin: 10px 10px 0px 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -30,6 +30,7 @@ ul{
 }
 
 .wrapper{
+  height: 60px;
   margin: 10px auto 0;
   width: 370px;
   align-items: center;
@@ -182,6 +183,7 @@ textarea:focus, input:focus, select:focus {
   outline: 0;
 } 
 .search-box{
+  margin-left: 10px;
   margin-right: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -294,6 +296,7 @@ footer{
   width: 100%;
 }
 #input_group button{
+  transition: 0.55s ease;
   background-color: #DDA0DD;
   border: none;
   color: var(--color-neutral-40);

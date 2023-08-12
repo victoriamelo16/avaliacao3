@@ -137,6 +137,7 @@
         font-size: 15px;
     }
     .card{
+        transition: 0.55s ease-in-out;
         background-image: linear-gradient(#333, #333);
         overflow: hidden;
         margin: 25px;
@@ -153,6 +154,7 @@
         transition: 0.4s;
     }
     .card .image{
+        transition: 0.55s ease-in;
         background-image: url('../img/museudoipiranga.jpeg');
         background-position: center;
         background-size: cover;
@@ -163,6 +165,7 @@
         justify-content: center;
     }
     .card .image2{
+        transition: 0.55s ease-in;
         background-image: url('../img/museudoamanha.jpeg');
         background-position: center;
         background-size: cover;
@@ -173,6 +176,7 @@
         justify-content: center;
     }
     .card .image3{
+        transition: 0.55s ease-in;
         background-image: url('../img/festivalafropunk.jpeg');
         background-position: center;
         background-size: cover;
@@ -217,6 +221,7 @@
     color: white;
 }
 .card-image{
+    transition: 0.55s ease;
     margin: 40px 20px;
     overflow: hidden;
     height: 300px;
