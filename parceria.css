@@ -33,7 +33,6 @@ body {
   input[type="text"],
   input[type="email"],
   input[type="tel"],   
-  input[type="parceria"],
   textarea {
     width: 90%;
     padding: 8px;
