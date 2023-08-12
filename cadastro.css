@@ -12,6 +12,7 @@ body {
 h1 {
   text-align: center;
   margin-top: 0px;
+  color: #7F7F7F;
 }
 
 form {
@@ -19,7 +20,7 @@ form {
   margin: 0 auto;
   padding: 25px;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0 2px 30px black;
 }
 
@@ -40,7 +41,7 @@ textarea {
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid purple;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 a{
@@ -63,9 +64,9 @@ button{
   transition: 0.5s;
   background-color: #ebc7eb;
   border: none;
-  padding: 15px;
+  padding: 5px;
   width: 50%;
-  height: 47px;
+  height: 45px;
   border-radius: 10px;
   color: white;
   box-shadow: 2px 2px 2px #000;
