@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgb(221, 160, 221), rgb(220, 180, 255), rgba(255, 255, 255, 0.791));
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+  
+  
+  h1 {
+    text-align: center;
+    margin-top: 0px;
+    color: #7F7F7F;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 30px black;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],   
+  textarea {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid purple;
+    border-radius: 10px;
+  }
+  
+  a{
+    width: 100%;
+    height: 47px;
+    border-radius: 20px;
+    margin-top: 15px;
+    padding: 10px 0px;
+    color: BLACK;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  button{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: 0.5s;
+    background-color: #ebc7eb;
+    border: none;
+    padding: 5px;
+    width: 50%;
+    height: 45px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 2px 2px 2px #000;
+    transition: 0.5s;
+  }
+  
+  button:hover {
+    background-color: #DDA0DD;
+    cursor: pointer;
+  }
