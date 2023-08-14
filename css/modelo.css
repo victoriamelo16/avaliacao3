@@ -13,11 +13,21 @@ ul{
   list-style: none;
 }
 .menu{
-  margin: 10px 10px 0px 0px;
+  margin: 0px 10px 0px 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+.logo img{
+  margin-top: 2px;
+  margin-left: 10px;
+  margin-right: 20px ;
+  width: 180px;
+  height: 60px;
+}
+button{
+  transition: 0.5s ease;
 }
 .menu li a{
     font-size: 12px;
@@ -31,7 +41,7 @@ ul{
 
 .wrapper{
   height: 60px;
-  margin: 10px auto 0;
+  margin: 0px auto 0;
   width: 370px;
   align-items: center;
   justify-content: center;
@@ -42,6 +52,9 @@ ul{
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+.select-btn{
+  margin-top: 10px;
 }
 .select-btn{
   justify-content: center;
@@ -123,30 +136,11 @@ ul{
   color: #808080;
 }
 
-.location-style div{
-  margin: 10px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.location-style a{
-  display: flex;
-    justify-content: center;
-    align-items: center; 
-    width: 100%;
-    height: 100%;
-    color: #DDA0DD;
-    font-weight: 600;
-    text-decoration: none; 
-    font-family: "Open Sans", sans-serif;
-}
-.location-style i{
-  padding-right: 10px;
-}
-
 .container{
+  z-index: 5;
+  top: 0;
+  position: fixed;
   width: 100%;
-  box-shadow: 0px 5px 20px #808080;
   background-color: #FFFFFF;
   display: flex;
   height: 80px;
