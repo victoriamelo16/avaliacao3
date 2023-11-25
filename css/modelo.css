@@ -156,6 +156,7 @@ button{
   margin-left: 10px;
   border-radius: 10px;
   border: 1px solid #DDA0DD;
+  transition: 0.35s;
 }
 .cadastrar a:hover{
   transition: ease-in-out;

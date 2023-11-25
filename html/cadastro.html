@@ -44,7 +44,7 @@
                 </div>
             </div>
         
-            <script src="../js/script.js"></script>    
+              
 
                     <ul class="menu">
                         <li><a href="#">SEJA UM PRODUTOR</a></li>
@@ -60,31 +60,32 @@
             </div>
         <div class="inp">
             <br>
-            <input id="txtNome" type="text" size="50" placeholder="Digite seu nome completo:" required/>
+            <input class="input-login" id="txtNome" type="text" size="50" placeholder="Digite seu nome completo:" required/>
         <br>
         
         <div>
-            <input id="txtEmail" type="email" size="50" placeholder="E-mail:" required/>
+            <input class="input-login" id="txtEmail" type="email" size="50" placeholder="E-mail:" required/>
             </div>
         
         <div>
-            <input id="telContato" type="tel" placeholder="Telefone: (xx) xxxxx-xxxx" required/>
+            <input class="input-login" id="telContato" type="tel" placeholder="Telefone: (xx) xxxxx-xxxx" required/>
             </div>
         
         <div class="form-group">
-            <input id="password" type="password" name="password" placeholder="Digite sua senha" required minlength="8"/>
+            <input class="input-login" id="senha01" type="password" name="password" placeholder="Digite sua senha" required minlength="8"/>
           </div>
         
         <div class="form-group">
-            <input id="password" type="password" name="password" placeholder="Confirme sua senha" required minlength="8"/>
+            <input class="input-login" id="senha02" type="password" name="password" placeholder="Confirme sua senha" onfocus="emDestaque();" onblur="semDestaque();" required minlength="8"/>
           </div>
         <br>
         </div>
         
         <div class="dados">
-            <a href="../html/index.html"><button>CADASTRAR</button></a>
+            <a href="../html/index.html"><button id="btnCad" onmouseover="aoPassar();" onmouseout="aoSair();" >CADASTRAR</button></a>
         </div>
-        
+
+        <script src="../js/scriptcad.js"></script>
         </form> 
     </main>   
     <footer>
@@ -167,4 +168,5 @@
         </div>    
    </footer>
 </body>
+  
 </html>
