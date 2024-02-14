@@ -293,4 +293,10 @@
     background-color: #DDA0DD;
     transition: 0.55s;
   }
+.container-table .table-icon{
+    width: 150px;
+} 
+.container-table .table-icon1{
+    width: 120px;
     
+}   
