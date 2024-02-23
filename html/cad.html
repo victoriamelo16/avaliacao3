@@ -7,6 +7,12 @@
         src="https://kit.fontawesome.com/518926e42a.js" 
         crossorigin="anonymous">
     </script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.all.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css
+    " rel="stylesheet">
     <title>Cadastro</title>
     <link rel="stylesheet" href="../css/cad.css">
 </head>
@@ -17,18 +23,18 @@
                 <form action="" class="sign-in-form">
                    <h2 class="title">Cadastre-se</h2>
                     <div class="input-field">
-                        <i class="fas fa-user"></i>
+                        <i class="fas fa-user" id="usuarioIcone"></i>
                         <input type="text" placeholder="Usuário" id="cadastroUsuario">
                     </div>
                     <div class="input-field">
-                        <i class="fas fa-envelope"></i>
-                        <input type="text" placeholder="Email" id="cadastroEmail">
+                        <i class="fas fa-envelope" id="emailIcone"></i>
+                        <input type="email" placeholder="Email" id="cadastroEmail">
                     </div>
                     <div class="input-field">
-                        <i class="fas fa-lock"></i>
+                        <i class="fas fa-lock" id="senhaIcone"></i>
                         <input type="password" placeholder="Senha" id="cadastroSenha">
                     </div>
-                    <button value="cadastre-se" class="buttonCadastro" onclick="validarCadastro()">Cadastre-se</button>
+                    <button value="cadastre-se" class="buttonCadastro" onclick="cadastrar()">Cadastre-se</button>
                     <p class="social-text">ou entre com</p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
@@ -48,13 +54,13 @@
                     <h2 class="title">Login</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Usuário">
+                        <input type="text" placeholder="Usuário" id="loginUsuario">
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Senha">
+                        <input type="password" placeholder="Senha" id="loginSenha">
                     </div>
-                    <button class="buttonLogin">Login</button>
+                    <button class="buttonLogin" onclick="login()">Login</button>
                     <p class="social-text">ou entre com</p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
@@ -95,7 +101,8 @@
             </div>
         </div>
     </div>
-    <script src="../js/cad.js"></script>
+    
 </body>
-<script src="../js/cadastro.js"> </script>
+<script src="../js/cad.js"></script>
+<script type="module" src="../js/cadastro.js"> </script>
 </html>

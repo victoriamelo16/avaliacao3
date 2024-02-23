@@ -9,3 +9,16 @@ sign_up_btn.addEventListener('click', () => {
 sign_in_btn.addEventListener('click', () => {
     container.classList.remove("sign-up-mode");
 });
+
+var urlParams = new URLSearchParams(window.location.search);
+var dataAfterQuestionMark = urlParams.get("s");
+
+if (dataAfterQuestionMark == 2){
+    container.classList.remove("sign-up-mode");
+} else if (dataAfterQuestionMark == 1) {
+    container.classList.add("sign-up-mode");
+}
+
+
+
+
