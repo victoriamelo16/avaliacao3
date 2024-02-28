@@ -13,4 +13,3 @@ function showPrivacyPolicy() {
 // Associando as funções aos botões
 document.getElementById("showTermsButton").addEventListener("click", showTerms);
 document.getElementById("showPrivacyButton").addEventListener("click", showPrivacyPolicy);
-
