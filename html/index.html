@@ -1,239 +1,358 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Life Events</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="../css/principal.css">
     <link rel="stylesheet" href="../css/modelo.css">
     <link rel="shortcut icon" href="../img/Design_sem_nome__1_-removebg-preview.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.css" rel="stylesheet">
+
 </head>
+
 <body>
-   <header class="container"> 
+    <header class="container">
         <div class="logo">
             <a href="../html/index.html"><img src="../img/logo-01.png" alt="logo"></a>
-            
-        </div>
-            <div class="search-box">
-                <a href="" class="search-btn">
-                </a>
-                    <div id="input_icon">
-                        
-                        <input type="text" class="search-text" placeholder="Pesquisar eventos, shows, teatros, espetáculos...">
-                        <button>
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button> 
-                        
-                    </div>
-            </div>
-            <div class="wrapper">
-                <div class="select-btn">
-                    <span><i class="fa-solid fa-location-dot"></i>Qualquer lugar</span>
-                    <i class="uil uil-angle-down"></i>
-                </div>
-                <div class="content-select">
-                    <div class="search">
-                        <i class="uil uil-search"></i>
-                        <input type="text" placeholder="Search">
-                    </div>
-                    <ul class="options"></ul>
-                </div>
-            </div>
-        
-            <script src="../js/script.js"></script>    
 
-                    <ul class="menu">
-                        <li><a href="#">SEJA UM PRODUTOR</a></li>
-                        <li><a href="../html/cad.html?s=1">ACESSE SUA CONTA </a></li>
-                        <li class="cadastrar"><a onclick="CadastroPagina()" href="../html/cad.html?s=2">CADASTRE-SE</a></li>
-                    </ul>
+        </div>
+        <div class="search-box">
+            <a href="" class="search-btn">
+            </a>
+            <div id="input_icon">
+
+                <input type="text" class="search-text" placeholder="Pesquisar eventos, shows, teatros, espetáculos...">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
             </div>
-   </header>
-   <nav>
-    <div class="topicos"><h2>Encontre o melhor para você!</h2></div>
-    <div class="navigation">
-        <ul class="temas">
-            <li><a href="show.html" target="_blank">Show</a></li>
-            <li><a href="teatro.html" target="_blank">Teatro</a></li>
-            <li>Infantil</li>
-            <li>Dança</li>
-            <li>Palestras</li>
-            <li>Gastronomia</li>
-            <li>Clássicos</li>
+        </div>
+        <div class="wrapper">
+            <div class="select-btn">
+                <span><i class="fa-solid fa-location-dot"></i>Qualquer lugar</span>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <div class="content-select">
+                <div class="search">
+                    <i class="uil uil-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <ul class="options"></ul>
+            </div>
+        </div>
+
+        <script src="../js/script.js"></script>
+
+        <ul class="menu">
+            <li><a href="#">SEJA UM PRODUTOR</a></li>
+            <li><a href="../html/cad.html?s=1">ACESSE SUA CONTA </a></li>
+            <li class="cadastrar"><a onclick="CadastroPagina()" href="../html/cad.html?s=2">CADASTRE-SE</a></li>
         </ul>
-    </div>
-   </nav>
-   <main>
-    
-
-    <div class="topicos">
-        <h2>Eventos em destaque na Life Events</h2>
-    </div>
-    <div class="slider">
-        <div class="slides">
-            <!-- Radio Buttons-->   
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">  
-            <input type="radio" name="radio-btn" id="radio3">  
-            <input type="radio" name="radio-btn" id="radio4">    
-            
-            <!-- Slide images -->
-            <div class="slide first">
-                <img src="../img/img1.jpg" alt="Imagem 1">
-            </div>
-            <div class="slide">
-                <img src="../img/img2.jpeg" alt="Imagem 2">
-            </div>
-            <div class="slide">
-                <img src="../img/img5.png" alt="Imagem 3">
-            </div>
-            <div class="slide">
-                <img src="../img/img4.png" alt="Imagem 4">
-            </div>
-         
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-            </div>
         </div>
+    </header>
+    <nav>
+        <div class="topicos">
+            <h2>Encontre o melhor para você!</h2>
+        </div>
+        <div class="navigation">
+            <ul class="temas">
+                <li><a href="show.html" target="_blank">Show</a></li>
+                <li><a href="teatro.html" target="_blank">Teatro</a></li>
+                <li>Infantil</li>
+                <li>Dança</li>
+                <li>Palestras</li>
+                <li>Gastronomia</li>
+                <li>Clássicos</li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+
+
+        <div class="topicos">
+            <h2>Eventos em destaque na Life Events</h2>
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <!-- Radio Buttons-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <!-- Slide images -->
+                <div class="slide first">
+                    <img src="../img/img1.jpg" alt="Imagem 1">
+                </div>
+                <div class="slide">
+                    <img src="../img/img2.jpeg" alt="Imagem 2">
+                </div>
+                <div class="slide">
+                    <img src="../img/img5.png" alt="Imagem 3">
+                </div>
+                <div class="slide">
+                    <img src="../img/img4.png" alt="Imagem 4">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
             <div class="manual-navigation">
-                 <label for="radio1" class="manual-btn"></label>
-                 <label for="radio2" class="manual-btn"></label>
-                 <label for="radio3" class="manual-btn"></label>
-                 <label for="radio4" class="manual-btn"></label>
-            </div>
-   </div>
-
-    <div class="topicos">
-        <h2>Encontre os eventos trends do mês</h2>
-    </div>
-    <section>
-        <div class="container_trends">
-            <div class="card">
-                <div class="image">
-                </div>
-                <div class="content">
-                    <p class="data">25 JUL > 01 OUT</p><br>
-                    <span class="title">Museu do Ipiranga</span>
-                    <p class="desc">Terça, Quinta, Sexta, Sábado e Domingo às 16h00
-
-                        3 de Agosto a 30 de Setembro
-                        
-                        Museu do Ipiranga - R. dos Patriotas, 20, São Paulo - São Paulo </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="image2">
-                </div>
-                <div class="content">
-                    <p class="data">25 JUL > 10 SET</p><br>
-                    <span class="title">Museu do Amanhã</span>
-                    <p class="desc">Terça a domingo . 10h às 18h . última entrada 17h
-
-                        4 de Agosto a 10 de Setembro
-                        
-                        Museu do Amanhã - Praça Mauá, 1, Rio de Janeiro - Rio de Janeiro</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="image3">
-                </div>
-                <div class="content">
-                    <p class="data">23 AGO > 24 AGO</p><br>
-                    <span class="title">Festival Afropunk Bahia 2023</span>
-                    <p class="desc">Sábado e Domingo às 16h00
-                        
-                        Parque de Exposições. - Av. Luís Viana Filho, 1590, Salvador - Bahia</p>
-                </div>
-    </section>
-
-    <div class="topicos">
-        <h2>O melhor de cada cidade está aqui!</h2>
-    </div>
-    <section class="container3">
-        <div class="card-container">
-            <div class="card-image img1">
-                <h2>Salvador</h2>
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
             </div>
         </div>
-        <div class="card-container">
-            <div class="card-image img2">
-                <h2>Brasília</h2>
+
+        <div class="topicos">
+            <h2>Encontre os eventos trends do mês</h2>
+        </div>
+        <section>
+            <div class="container_trends">
+                <div class="card">
+                    <div class="image">
+                    </div>
+                    <div class="content">
+                        <p class="data">25 JUL > 01 OUT</p><br>
+                        <span class="title">Museu do Ipiranga</span>
+                        <p class="desc">Terça, Quinta, Sexta, Sábado e Domingo às 16h00
+
+                            3 de Agosto a 30 de Setembro
+
+                            Museu do Ipiranga - R. dos Patriotas, 20, São Paulo - São Paulo </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image2">
+                    </div>
+                    <div class="content">
+                        <p class="data">25 JUL > 10 SET</p><br>
+                        <span class="title">Museu do Amanhã</span>
+                        <p class="desc">Terça a domingo . 10h às 18h . última entrada 17h
+
+                            4 de Agosto a 10 de Setembro
+
+                            Museu do Amanhã - Praça Mauá, 1, Rio de Janeiro - Rio de Janeiro</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image3">
+                    </div>
+                    <div class="content">
+                        <p class="data">23 AGO > 24 AGO</p><br>
+                        <span class="title">Festival Afropunk Bahia 2023</span>
+                        <p class="desc">Sábado e Domingo às 16h00
+
+                            Parque de Exposições. - Av. Luís Viana Filho, 1590, Salvador - Bahia</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card-container">
-            <div class="card-image img3">
-                <h2>São Paulo</h2>
+
+            <div class="topicos">
+                <h2>O melhor de cada cidade está aqui!</h2>
             </div>
-        </div>
-        <div class="card-container">
-            <div class="card-image img4">
-                <h2>Curitiba</h2>
+            <section>
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card-capitais swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+
+                                    <div class="card-image">
+                                        <img src="../img/salvador.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="cap-content">
+                                    <h2 class="name">Salvador</h2>
+                                    <p class="description">Na atualidade, é a maior cidade em população do Nordeste
+                                        brasileiro e um dos principais centros culturais do país.</p>
+                                    <button class="btn-cap">Ver mais</button>
+                                </div>
+                            </div>
+                            <div class="card-capitais swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+
+                                    <div class="card-image">
+                                        <img src="../img/salvador.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="cap-content">
+                                    <h2 class="name">Salvador</h2>
+                                    <p class="description">Na atualidade, é a maior cidade em população do Nordeste
+                                        brasileiro e um dos principais centros culturais do país.</p>
+                                    <button class="btn-cap">Ver mais</button>
+                                </div>
+                            </div>
+                            <div class="card-capitais swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+
+                                    <div class="card-image">
+                                        <img src="../img/salvador.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="cap-content">
+                                    <h2 class="name">Salvador</h2>
+                                    <p class="description">Na atualidade, é a maior cidade em população do Nordeste
+                                        brasileiro e um dos principais centros culturais do país.</p>
+                                    <button class="btn-cap">Ver mais</button>
+                                </div>
+                            </div>
+                            <div class="card-capitais swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+
+                                    <div class="card-image">
+                                        <img src="../img/salvador.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="cap-content">
+                                    <h2 class="name">Salvador</h2>
+                                    <p class="description">Na atualidade, é a maior cidade em população do Nordeste
+                                        brasileiro e um dos principais centros culturais do país.</p>
+                                    <button class="btn-cap">Ver mais</button>
+                                </div>
+                            </div>
+                            <div class="card-capitais swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+
+                                    <div class="card-image">
+                                        <img src="../img/salvador.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="cap-content">
+                                    <h2 class="name">Salvador</h2>
+                                    <p class="description">Na atualidade, é a maior cidade em população do Nordeste
+                                        brasileiro e um dos principais centros culturais do país.</p>
+                                    <button class="btn-cap">Ver mais</button>
+                                </div>
+                            </div>
+                            <div class="card-capitais swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+
+                                    <div class="card-image">
+                                        <img src="../img/salvador.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="cap-content">
+                                    <h2 class="name">Salvador</h2>
+                                    <p class="description">Na atualidade, é a maior cidade em população do Nordeste
+                                        brasileiro e um dos principais centros culturais do país.</p>
+                                    <button class="btn-cap">Ver mais</button>
+                                </div>
+                            </div>
+                            <div class="card-capitais swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+
+                                    <div class="card-image">
+                                        <img src="../img/salvador.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="cap-content">
+                                    <h2 class="name">Salvador</h2>
+                                    <p class="description">Na atualidade, é a maior cidade em população do Nordeste
+                                        brasileiro e um dos principais centros culturais do país.</p>
+                                    <button class="btn-cap">Ver mais</button>
+                                </div>
+                            </div>
+                            <div class="card-capitais swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+
+                                    <div class="card-image">
+                                        <img src="../img/salvador.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="cap-content">
+                                    <h2 class="name">Salvador</h2>
+                                    <p class="description">Na atualidade, é a maior cidade em população do Nordeste
+                                        brasileiro e um dos principais centros culturais do país.</p>
+                                    <button class="btn-cap">Ver mais</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+
+            <div class="topicos">
+                <h2>Para produtores de eventos, online ou presenciais, e cursos online</h2>
             </div>
-        </div>
-    </section>
+            <section>
+                <div class="container-table">
+                    <table>
 
-    <div class="topicos">
-        <h2>Para produtores de eventos, online ou presenciais, e cursos online</h2>
-    </div>
-    <section>
-        <div class="container-table">
-            <table>
+                        <tr>
+                            <th>Crie eventos online</th>
+                            <th>Cursos online gravados</th>
+                            <th>Eventos presenciais</th>
+                        </tr>
 
-                <tr>
-                    <th>Crie eventos online</th>
-                    <th>Cursos online gravados</th>
-                    <th>Eventos presenciais</th>
-                </tr>
+                        <tr>
+                            <td>Fazer um evento online pode ser uma oportunidade de expandir seu negócio e
+                                de se conectar com pessoas de diversos lugares. Crie, venda e transmita o
+                                seu evento online, tudo em um único lugar!
+                            </td>
+                            <td>Na Life Events você pode disponibilizar e vender seus cursos online para
+                                seus clientes assistirem onde estiverem e quando quiserem, tudo em uma
+                                plataforma completa, segura e simples.
+                            </td>
+                            <td>Uma plataforma completa para a venda de ingressos e gestão de eventos de modo
+                                self-service, na qual você tem total autonomia para cadastrar, gerenciar e acompanhar
+                                todas as informações de seu evento.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/svg/undraw_online_media_re_r9qv.svg" class="table-icon1"></td>
+                            <td><img src="../img/svg/undraw_online_learning_re_qw08.svg" alt="" class="table-icon"></td>
+                            <td><img src="../img/svg/undraw_online_resume_re_ru7s.svg" alt="" class="table-icon"></td>
+                        </tr>
 
-                <tr>
-                    <td>Fazer um evento online pode ser uma oportunidade de expandir seu negócio e 
-                        de se conectar com pessoas de diversos lugares. Crie, venda e transmita o 
-                        seu evento online, tudo em um único lugar!
-                    </td>
-                    <td>Na Life Events você pode disponibilizar e vender seus cursos online para 
-                        seus clientes assistirem onde estiverem e quando quiserem, tudo em uma 
-                        plataforma completa, segura e simples.
-                    </td>
-                    <td>Uma plataforma completa para a venda de ingressos e gestão de eventos de modo 
-                        self-service, na qual você tem total autonomia para cadastrar, gerenciar e acompanhar
-                         todas as informações de seu evento.
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="../img/svg/undraw_online_media_re_r9qv.svg" class="table-icon1"></td>
-                    <td><img src="../img/svg/undraw_online_learning_re_qw08.svg" alt="" class="table-icon"></td>
-                    <td><img src="../img/svg/undraw_online_resume_re_ru7s.svg" alt=""class="table-icon"></td>
-                </tr>
+                        <tr>
+                            <td>
+                                <button class="button-table">
+                                    Conheça o Life Streaming
+                                </button>
+                            </td>
+                            <td>
+                                <button class="button-table">
+                                    Conheça o Life Connected
+                                </button>
+                            </td>
+                            <td>
+                                <button class="button-table">
+                                    Conheça a Life Events Producers
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
 
-                <tr>
-                    <td>
-                        <button class="button-table">
-                          Conheça o Life Streaming  
-                        </button>
-                    </td>
-                    <td>
-                        <button class="button-table">
-                          Conheça o Life Connected
-                        </button>
-                    </td>
-                    <td>
-                        <button class="button-table">
-                          Conheça a Life Events Producers
-                        </button>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </section>
-
-   </main>
-   <footer>
+    </main>
+    <footer>
         <div id="footer_content">
             <div id="footer_contacts">
                 <h1>Life Events</h1>
@@ -245,7 +364,8 @@
                     <a href="https://pt-br.facebook.com/" target="_blank" class=footer-link id="facebook">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D" target="_blank" class=footer-link id="twitter">
+                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D"
+                        target="_blank" class=footer-link id="twitter">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
                     <a href="https://br.linkedin.com/" target="_blank" class=footer-link id="linkedin">
@@ -297,7 +417,7 @@
             <div id="footer_subscribe">
                 <h3>Subscribe</h3>
                 <p>
-                    Digite seu e-mail para ser notificado sobre eventos inéditos   
+                    Digite seu e-mail para ser notificado sobre eventos inéditos
                 </p>
                 <div id="input_group">
                     <input type="email" id="email">
@@ -310,8 +430,11 @@
         <div id="footer_copyright">
             &#169
             2023 all rights reserved
-        </div>    
-   </footer>
+        </div>
+    </footer>
 </body>
+
+
+<script src="../js/capitais.js" type="module"></script>
 
 </html>

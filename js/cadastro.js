@@ -1,7 +1,5 @@
-import Swal from 'sweetalert2'
 
-var dadosUsuarios = [
-]
+var dadosUsuarios = []
 
 function cadastrar(){
     event.preventDefault()
@@ -19,20 +17,19 @@ function cadastrar(){
         dadosUsuarios.push(usuario)
         console.log('Registro feito')
         console.log(dadosUsuarios)
-
     }
 }
 
 function login(){
     event.preventDefault()
     const loginUsuario = document.getElementById('loginUsuario').value
-    console.log(loginUsuario)
     const loginSenha = document.getElementById('loginSenha').value
 
     const validar = dadosUsuarios.find(u => u[0].usuario === loginUsuario && u[0].senha === loginSenha);
     
     if(validar){
         console.log('usuario encontrado')
+        window.location.href = '../html/index.html'
     } else{
         console.log('usuario invalido')
     }
@@ -43,12 +40,7 @@ function login(){
 function validarUsuario(cadastroUsuario){
     if (cadastroUsuario.includes(' ') === true){
         console.log("usurio contém espaço")
-        Swal.fire({
-            title: 'Error',
-            text: 'Usuário contém espaço',
-            icon: 'error',
-            confirmButtonText: 'Cool'
-          })
+        alert('Usurio contém espaço')
         var usuarioIcone = document.getElementById('usuarioIcone').style.color = "red"
         return false;
     } else{
@@ -57,7 +49,7 @@ function validarUsuario(cadastroUsuario){
     }
 }
 function validarEmail(CadastroEmail){
-    if(CadastroEmail){ // terminar validacação email
+    if(CadastroEmail){
         
         console.log("email Invalido")
         var emailIcone = document.getElementById('emailIcone').style.color = "red"
