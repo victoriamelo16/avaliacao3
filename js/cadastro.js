@@ -8,9 +8,9 @@ function cadastrar(){
     const CadastroEmail = document.getElementById('cadastroEmail').value
     var validacao1 = validarUsuario(CadastroUsuario)
     var validacao2 = validarSenha(CadastroSenha)
-    // var validacao3 = validarEmail(CadastroEmail)
+    var validacao3 = validarEmail(CadastroEmail)
 
-    if(validacao1 && validacao2 === true){
+    if(validacao1 && validacao2 && validacao3 === true){
         usuario = [
             {usuario: CadastroUsuario, senha: CadastroSenha, email: CadastroEmail}
         ]    
@@ -40,7 +40,7 @@ function login(){
 function validarUsuario(cadastroUsuario){
     if (cadastroUsuario.includes(' ') === true){
         console.log("usurio contém espaço")
-        alert('Usurio contém espaço')
+        alert('Usuário contém espaço')
         var usuarioIcone = document.getElementById('usuarioIcone').style.color = "red"
         return false;
     } else{
@@ -48,21 +48,21 @@ function validarUsuario(cadastroUsuario){
         return true;
     }
 }
-function validarEmail(CadastroEmail){
-    if(CadastroEmail){
-        
-        console.log("email Invalido")
+function validarEmail(cadastroEmail){
+    if (!cadastroEmail.includes("@") || !cadastroEmail.includes(".com") || cadastroEmail.split("@")[0].length < 10 || cadastroEmail.split("@")[1].split(".com")[0].length < 1){
+        alert('E-mail inválido')
         var emailIcone = document.getElementById('emailIcone').style.color = "red"
-        return false
+        return false;
     } else{
         var emailIcone = document.getElementById('emailIcone').style.color = '#acacac'
         return true;
     }
-    
 }
+    
 function validarSenha(CadastroSenha){
     if(CadastroSenha.length <= 6){
         console.log('Senha menor que 6 digitos')
+        alert('A senha deve conter pelo menos 7 caracteres')
         var senhaIcone = document.getElementById('senhaIcone').style.color = "red"
         return false;
     } else{
