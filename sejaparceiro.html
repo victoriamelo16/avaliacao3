@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja Nosso Parceiro</title>
+    <link rel="icon" type="image/x-icon" href="../img/Design_sem_nome__1_-removebg-preview.png">
+    <link rel="stylesheet" href="../css/sejaparceiro.css">
+    <link rel="stylesheet" href="../css/modelo.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="parceria.js"
+
+    src="https://kit.fontawesome.com/518926e42a.js" 
+    crossorigin="anonymous">
+    </script>
+    <style>
+    </style>
+
+    
+</head>
+<body>
+
+    <script>
+        function applyFocusStyle(element) {
+            console.log('Input ' + element.id + ' ganhou foco');
+            element.style.backgroundColor = "silver";
+            element.style.borderRadius = "100px"; 
+            element.style.width = "300px"; 
+            element.style.paddingLeft = "10px"; 
+        }
+    
+        function resetFocusStyle(element) {
+            console.log('Input ' + element.id + ' perdeu o foco');
+            element.style.backgroundColor = ""; 
+            element.style.borderRadius = ""; 
+            element.style.width = ""; 
+            element.style.paddingLeft = ""; 
+        }
+    
+        function initFocusEventHandlers() {
+            var inputFields = document.querySelectorAll('.input-field input');
+            inputFields.forEach(function(input) {
+                input.addEventListener('focus', function() {
+                    applyFocusStyle(this);
+                });
+    
+                input.addEventListener('blur', function() {
+                    resetFocusStyle(this);
+                });
+            });
+        }
+        document.addEventListener('DOMContentLoaded', initFocusEventHandlers);
+    </script>
+
+   
+   <main>
+    <div class="container">
+        <div class="forms-container">
+            <div class="sejaParceiro">
+                <form action="" class="parceria-form">
+                   <h2 class="title">Seja Nosso Parceiro</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Nome" id="parceriaUsuario">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Email" id="parceriaEmail">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" placeholder="Telefone: (xx) xxxxx-xxxx" id="parceriaTelefone">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-briefcase"></i>
+                        <input type="text" placeholder="Nome da Empresa" id="parceriaEmpresa">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-file"></i>
+                        <input type="text" placeholder="CPF/CNPJ" id="parceriaId">
+                    </div>
+                    <button class="btn">CONCLUIR</button>
+        
+                    </div> 
+                </form>
+            </div> 
+        </div>
+    </div>
+   </main>
+   
+
+</body>
+</html>
