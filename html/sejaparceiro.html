@@ -86,7 +86,6 @@ var campoTelefone = document.getElementById('parceriaTelefone');
 
 campoTelefone.addEventListener('input', function() {
     var telefone = this.value;
-
     telefone = telefone.replace(/\D/g, '');
     telefone = telefone.replace(/^(\d{2})(\d)/g, '($1) $2');
     telefone = telefone.replace(/(\d)(\d{4})$/, '$1-$2');
