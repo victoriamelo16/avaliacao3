@@ -53,6 +53,46 @@
         document.addEventListener('DOMContentLoaded', initFocusEventHandlers);
     </script>
 
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var campoCpfCnpj = document.getElementById('parceriaId');
+
+    campoCpfCnpj.addEventListener('input', function() {
+        var valor = this.value;
+
+        valor = valor.replace(/\D/g, '');
+       
+        if (valor.length <= 11) {
+            
+            valor = valor.replace(/(\d{3})(\d)/, '$1.$2');
+            valor = valor.replace(/(\d{3})(\d)/, '$1.$2');
+            valor = valor.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+        } else {
+            
+            valor = valor.replace(/^(\d{2})(\d)/, '$1.$2');
+            valor = valor.replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3');
+            valor = valor.replace(/\.(\d{3})(\d)/, '.$1/$2');
+            valor = valor.replace(/(\d{4})(\d)/, '$1-$2');
+        }
+
+        this.value = valor; 
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+var campoTelefone = document.getElementById('parceriaTelefone');
+
+campoTelefone.addEventListener('input', function() {
+    var telefone = this.value;
+
+    telefone = telefone.replace(/\D/g, '');
+    telefone = telefone.replace(/^(\d{2})(\d)/g, '($1) $2');
+    telefone = telefone.replace(/(\d)(\d{4})$/, '$1-$2');
+    this.value = telefone; 
+});
+});
+</script>
+
    
    <main>
     <div class="container">
