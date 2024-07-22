@@ -1,39 +1,5 @@
 
-var dadosUsuarios = []
 
-function cadastrar(){
-    event.preventDefault()
-    const CadastroUsuario = document.getElementById('cadastroUsuario').value 
-    const CadastroSenha = document.getElementById('cadastroSenha').value 
-    const CadastroEmail = document.getElementById('cadastroEmail').value
-    var validacao1 = validarUsuario(CadastroUsuario)
-    var validacao2 = validarSenha(CadastroSenha)
-    var validacao3 = validarEmail(CadastroEmail)
-
-    if(validacao1 && validacao2 && validacao3 === true){
-        usuario = [
-            {usuario: CadastroUsuario, senha: CadastroSenha, email: CadastroEmail}
-        ]    
-        dadosUsuarios.push(usuario)
-        console.log('Registro feito')
-        console.log(dadosUsuarios)
-    }
-}
-
-function login(){
-    event.preventDefault()
-    const loginUsuario = document.getElementById('loginUsuario').value
-    const loginSenha = document.getElementById('loginSenha').value
-
-    const validar = dadosUsuarios.find(u => u[0].usuario === loginUsuario && u[0].senha === loginSenha);
-    
-    if(validar){
-        console.log('usuario encontrado')
-        window.location.href = '../html/index.html'
-    } else{
-        console.log('usuario invalido')
-    }
-}
 
 
 

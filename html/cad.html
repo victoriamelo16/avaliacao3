@@ -16,21 +16,25 @@
     <div class="container">
         <div class="forms-container">
             <div class="signin-signup">
-                <form action="" class="sign-in-form">
+                <form action="../php/conexao.php" method="post" class="sign-in-form">
                     <h2 class="title">Cadastre-se</h2>
                     <div class="input-field">
                         <i class="fas fa-user" id="usuarioIcone"></i>
-                        <input type="text" placeholder="Usuário" id="cadastroUsuario">
+                        <input type="text" name="user" placeholder="Usuário" id="cadastroUsuario" required>
                     </div>
                     <div class="input-field">
                         <i class="fas fa-envelope" id="emailIcone"></i>
-                        <input type="email" placeholder="Email" id="cadastroEmail">
+                        <input type="email" name="email" placeholder="Email" id="cadastroEmail" required>
                     </div>
                     <div class="input-field">
-                        <i class="fas fa-lock" id="senhaIcone"></i>
-                        <input type="password" placeholder="Senha" id="cadastroSenha">
+                        <i class="fas fa-lock"  id="senhaIcone"></i>
+                        
+                        <input type="password" name="senha" placeholder="Senha" id="cadastroSenha" required>
                     </div>
-                    <button value="cadastre-se" class="buttonCadastro" onclick="cadastrar()">Cadastre-se</button>
+                    <input type="hidden" name="acao" value="cadastrar">
+                    <input type="submit" value="cadastre-se" class="buttonCadastro"></input>
+
+
                     <p class="social-text">ou entre com</p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
@@ -46,17 +50,20 @@
                     </div>
                 </form>
 
-                <form action="" class="sign-up-form">
+                <form action="../php/conexao.php" method="post" class="sign-up-form" required>
                     <h2 class="title">Login</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Usuário" id="loginUsuario">
+                        <input type="text" name="user" placeholder="Usuário" id="loginUsuario" required>
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Senha" id="loginSenha">
+                        <input type="password" name="senha" placeholder="Senha" id="loginSenha" required>
                     </div>
-                    <button class="buttonLogin" onclick="login()">Login</button>
+                    <input type="hidden" name="acao" value="logar">
+                    <input type="submit" class="buttonLogin"></input>
+
+
                     <p class="social-text">ou entre com</p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
