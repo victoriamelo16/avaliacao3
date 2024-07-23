@@ -24,12 +24,11 @@ if(isset($_GET["acao"])){
 
 
 function abrirBanco() {
-    $conexao = new mysqli("localhost", "root", "root", "lifeevents");
+    $conexao = new mysqli("localhost", "root", "");
     if ($conexao->connect_error) {
         die("Conexão falhou: " . $conexao->connect_error);
     }
 
-    // Comando SQL para criar banco de dados e tabela
     $sql = "
         CREATE DATABASE IF NOT EXISTS lifeevents;
         USE lifeevents;
